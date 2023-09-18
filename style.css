@@ -1,0 +1,736 @@
+@font-face {
+  font-family: 'Neometric';
+  src: url('fonts/your-font-file.woff2') format('woff2'), 
+       url('fonts/your-font-file.woff') format('woff');
+}
+
+
+h2, h3, h4,h6, p ,a{
+  font-family: 'YourFontName', sans-serif; /* Use the font-family name you defined in @font-face */
+}
+
+
+*{margin: 0 ; padding: 0;}
+
+body{
+  background-color: #f8f8f8;
+}
+
+.logo{
+  font-size: 15px ;
+  font-weight: 700 ;
+  letter-spacing: 1px ;
+  margin-top: 10px;
+}
+
+  nav{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 900;
+    font-size: 13px;
+    position: relative;
+  }
+
+  nav a:first-child{
+    color: #4458dc;
+  }
+
+  nav a:before{
+    content: "";
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    border-bottom: 2px solid #4458dc;
+    transition: all 0.4s linear;
+  }
+
+  nav a:hover:before{
+      width: 100%;
+  }
+
+  main{
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+ 
+  .rightside img{
+    width: 70%;
+    height: 70%;
+    margin-left: 250px; 
+  }
+
+  .rightside .background{
+    object-fit: fill;
+    margin-right: -10px;
+    width: 500px;
+    height: 620px;
+  }
+
+  .rightside .girl{
+    position: absolute;
+    top: 90px;
+    left: 30px;
+    width: 750px;
+    height: 500px;
+    margin-left: 700px;
+    border: 00000;
+  } 
+   
+  h6 {
+    font-weight: 700;
+    font-size: 12px;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-left: 20px;
+    margin-right: 100px;
+    word-spacing: 4px;
+    margin-bottom: 35px;
+  }
+
+  h3{
+    font-weight: 700;
+    font-size: 45px;
+    padding-top: 5px;
+    margin-right: 100px;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    margin-left: 20px
+  }
+
+  .leftside .btn1 , .btn2{
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 14px;
+    text-align: center;
+    padding: 12px 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 5px;
+    display: inline-block;
+    margin-right: 60px;
+    margin-left: 23px;
+  }
+
+  .leftside .btn1{
+    color: #fff;
+    letter-spacing: 0;
+    background-image: linear-gradient(to right,#4458dc 0%,#854fee 100%);
+    box-shadow: 0 10px 20px rgba(118,85,225,.3);
+  }
+
+  .leftside .btn2{
+    border: 2px solid #4458dc;
+    color: #222;
+    background-color: #fff;
+    box-shadow: none;
+  }
+
+  .leftside .btn1:hover{
+    border: 2px solid #4458dc;
+    color: #222;
+    background-color: #fff;
+    box-shadow: none;
+    background-image: none;
+  }
+
+
+    /* Additional CSS for this specific page */
+    .content {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+  }
+
+  .left-column .img {
+    object-fit: fill;
+    width: 500px;
+    height: 300px;
+    margin-right: 90px;
+    padding-top: 50px;
+  }
+
+  .right-column {
+      text-align: justify;
+      padding-top: 50px;
+      letter-spacing: 1px;
+      line-height: 40px;
+  }
+
+  .right-column:after {
+    content: "";
+  display: inline-block;
+  width: 100%;
+}
+
+  .points {
+      list-style-type: decimal;
+      margin-left: 20px;
+      font-size: 20px;
+  }
+
+  
+.whyus {
+  background-color: white; 
+  padding: 5px; 
+  text-align: center; 
+  object-fit: fill;
+  width: 1350px;
+  height: 150px;
+  margin-right: 90px;
+  padding-top: 50px;
+}
+
+.banner img {
+  width: 1300px;; 
+  height: 150px;
+  display: block; 
+  margin: 0 auto;
+}
+
+#container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  background-color: #f8f8f8;
+}
+
+#container div {
+  height: 250px;
+  width: 450px;
+  background: white;
+  margin: 60px;
+  text-align: center;
+}
+
+h4{
+  font-size: 23px;
+  padding-left: 15px;
+  padding-top: 25px;
+}
+
+p{
+  font-size: 10px;
+  padding-left: 15px;
+  padding-top: 20px;
+}
+
+button{
+  background-color: black;
+  border-radius: 12px;
+  color: white;
+  padding: 10px 22px ;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 11px;
+  margin-left: 15px;
+  margin-top: 30px;
+}
+
+button:hover {
+    background-color: #555555; 
+} 
+
+#container h2{
+    padding-top: 25px;
+    padding-right: 130px;
+}
+
+#container h5{
+  padding-top: 40px;
+
+}
+
+
+.new-banner {
+  width: 1820px;
+  height: 300px;
+  background-image: url('Australian.png'); 
+  background-size: contain;
+  background-repeat: no-repeat; 
+  background-position: center;
+  margin-top: 20px;
+} 
+
+.new-banner {
+  max-width: 100%;
+}
+
+.new-menbanner {
+  width: 1400px;
+  height: 800px;
+  background-image: url('menban.png'); 
+  background-size: contain;
+  background-repeat: no-repeat; 
+  background-position: center;
+  margin-right: 100px;
+  margin-top: 10px;
+} 
+
+.new-menbanner {
+  max-width: 100%;
+}
+
+#reviews{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  background-color: #f8f8f8;
+}
+
+#reviews div {
+  height: 200px;
+  width: 450px;
+  background: white;
+  margin: 60px;
+  text-align: center;
+}
+
+h4{
+  font-size: 23px;
+  padding-left: 15px;
+  padding-top: 25px;
+}
+
+p{
+  font-size: 10px;
+  padding-left: 15px;
+  padding-top: 20px;
+}
+
+.foot {
+  width:100%;
+  height:130px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 10px 20px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+
+/* Tablet screen styles */
+@media screen and (max-width: 768px) {
+
+  
+body {
+  font-family: 'Neometric', sans-serif; /* Use the custom font you defined */
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 900;
+  font-size: 11px;
+  text-transform: uppercase;
+  display: block;
+  margin: 10px 0;
+}
+
+  nav {
+      display: block;
+  }
+
+  .navsection {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .logo {
+      margin-bottom: 20px;
+  }
+
+  nav a {
+      font-size: 12px;
+      margin: 10px;
+  }
+
+  main {
+      flex-direction: row;
+      align-items: center;
+  }
+
+  .rightside img {
+      width: 100%;
+      margin-left: 0;
+  }
+
+  .rightside .background {
+      width: 100%;
+      height: 390px;
+      width: 350px;
+      margin-right: 0;
+  }
+
+  .rightside .girl {
+    height: 350px;
+    width: 390px;
+    margin-left: 290px;
+    margin-top: 150px;
+  }
+
+  .leftside h6,
+  .leftside h3,
+  .leftside h6 {
+      margin: 0 20px;
+      text-align: center;
+  }
+
+  .leftside .btn1,
+  .leftside .btn2 {
+      margin: 10px 0;
+  }
+
+  .content {
+      flex-direction: row;
+      align-items: center;
+  }
+
+  .left-column .img {
+      width: 90%;
+      height:230px;
+      margin-top: 10%;
+  }
+
+  .right-column {
+    width:70%;
+  }
+
+  .points {
+      font-size: 16px;
+      margin-left: 0;
+  }
+
+  .whyus {
+      width: 100%;
+      margin-right: 0;
+  }
+
+  .banner img {
+    width: 80%;
+    margin-left:7%;
+  }
+
+  #container {
+      flex-direction: row;
+      align-items: center;
+  }
+
+  #container div {
+    width: 70%;
+    height: 250px;
+    margin: 10px ;
+  }
+
+  h4 {
+      padding: 0;
+  }
+
+  button {
+      margin-top: 20px;
+  }
+
+  .new-banner {
+      width: 100%;
+      margin-top:-69px;
+  }
+
+  .new-menbanner {
+      width: 80%;
+      margin-right: 0;
+      margin-top:-199px;
+  }
+
+  #reviews {
+      flex-direction: row;
+      margin-right: 70px;
+  }
+
+  #reviews div {
+    width: 25%;
+    margin: 20px;
+  }
+
+  h2 {
+      padding-left: 0;
+  }
+
+  h4 {
+      font-size: 18px;
+      padding-left: 0;
+      padding-top: 10px;
+  }
+
+  p {
+      font-size: 12px;
+      padding-left: 0;
+      padding-top: 10px;
+  }
+}
+
+/* Mobile screen styles for max-width: 375px */
+@media screen and (max-width: 375px) {
+  body {
+    font-family: 'Neometric', sans-serif; 
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+  }
+  .header {
+      padding: 10px;
+  }
+
+  .logo {
+      margin-bottom: 10px;
+  }
+
+  nav a {
+    font-size: 10px;
+    padding-left:10px;
+  }
+
+  main {
+      padding: 60px;
+  }
+
+  .rightside img,
+  .rightside .background,
+  .rightside .girl {
+    width: 90%;
+    height:80%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .rightside .girl{
+    margin-top:330px;
+    margin-left:150px;
+    width:150px;
+    height:120px;
+  }
+
+  .rightside .background{
+    width:100px;
+    height:150px;
+  }
+
+  @font-face {
+    font-family: 'Neometric';
+    src: url('fonts/your-font-file.woff2') format('woff2'),
+         url('fonts/your-font-file.woff') format('woff');
+}
+
+/* Applying the Neometric font to specified elements */
+.leftside h6,
+.leftside h3,
+.leftside h6 {
+    font-family: 'Neometric', sans-serif;
+    margin: 10px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+.leftside h6 {
+  font-size:9px;
+}  
+
+h2,
+h3,
+h4,
+h6,
+p,
+a {
+    font-family: 'Neometric', sans-serif;
+}
+
+  .leftside .btn1,
+  .leftside .btn2 {
+    margin: 5px;
+    font-size: 7px;
+    padding: 9px 11px;
+  }
+
+  .content {
+    margin-top:-99px;
+    flex-direction:column;
+    padding:5px ;
+  }
+
+  .left-column .img {
+    width: 85%;
+    height:190px;
+    margin-right: 1px;
+    margin-top:-49px;
+  }
+
+  .right-column {
+    text-align: center;
+    width:85%;
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 24px;
+    margin-top:29px;
+  }
+
+  .points {
+    font-size: 12px;
+    margin-right: 60px;
+  }
+
+  .whyus {
+    width: 90%;
+    height:110px;
+    padding: 1px;
+    padding-top:20px;
+  }
+
+  .banner img {
+    width: 80%;
+    height:90px;
+    margin-right:10px;
+  }
+
+  #container {
+      flex-direction: column;
+      align-items: start;
+      padding-top:20px;
+  }
+
+  #container div {
+      width: 70%;
+      margin: auto;
+      margin-top:20px;
+  }
+
+  h4 {
+      font-size: 18px;
+      padding-bottom: 20px;
+  }
+
+  p {
+      font-size: 12px;
+      padding: 5px 0;
+  }
+
+  button {
+      margin-top: 10px;
+      font-size: 12px;
+      padding: 8px 15px;
+  }
+
+  .new-banner {
+      width: 90%;
+      margin-top:-89px;
+  }
+
+  .new-menbanner {
+      width: 85%;
+      margin-right: 0;
+      margin-top: 10px;
+      margin-top:-350px;
+
+  }
+
+  #reviews {
+    display: flex;
+    flex-direction: column; 
+  }
+
+  #reviews div {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  h2 {
+    font-size: 18px;
+    padding-left: 0;
+  }
+
+  h4 {
+    font-size: 10px;
+    padding-left: 0;
+    padding-top: 3px;
+  }
+
+  p {
+    font-size: 10px;
+    padding-left: 0;
+    padding-top: 5px;
+  }
+
+  .foot {
+    width: 100%;
+    padding: 15px 0;
+    margin-top: 100px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 10px 20px;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+
+}
